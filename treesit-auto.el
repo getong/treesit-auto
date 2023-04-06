@@ -118,10 +118,20 @@ automatic installation (or prompting, based on the value of
       :remap 'cmake-mode
       :url "https://github.com/uyha/tree-sitter-cmake")
     ,(make-treesit-auto-recipe
+      :lang 'make
+      :ts-mode 'make-ts-mode
+      :remap 'make-mode
+      :url "https://github.com/alemuller/tree-sitter-make")
+    ,(make-treesit-auto-recipe
       :lang 'commonlisp
       :ts-mode 'commonlisp-ts-mode
       :remap 'common-lisp-mode
       :url "https://github.com/theHamsta/tree-sitter-commonlisp")
+    ,(make-treesit-auto-recipe
+      :lang 'elisp
+      :ts-mode 'elisp-ts-mode
+      :remap 'elisp-mode
+      :url "https://github.com/Wilfred/tree-sitter-elisp")
     ,(make-treesit-auto-recipe
       :lang 'cpp
       :ts-mode 'c++-ts-mode
@@ -133,6 +143,11 @@ automatic installation (or prompting, based on the value of
       :remap 'css-mode
       :url "https://github.com/tree-sitter/tree-sitter-css")
     ,(make-treesit-auto-recipe
+      :lang 'scss
+      :ts-mode 'scss-ts-mode
+      :remap 'scss-mode
+      :url "https://github.com/serenadeai/tree-sitter-scss")
+    ,(make-treesit-auto-recipe
       :lang 'dockerfile
       :ts-mode 'dockerfile-ts-mode
       :remap 'dockerfile-mode
@@ -143,6 +158,11 @@ automatic installation (or prompting, based on the value of
       :remap 'elixir-mode
       :requires 'heex
       :url "https://github.com/elixir-lang/tree-sitter-elixir")
+    ,(make-treesit-auto-recipe
+      :lang 'glsl
+      :ts-mode 'glsl-ts-mode
+      :remap 'glsl-mode
+      :url "https://github.com/theHamsta/tree-sitter-glsl")
     ,(make-treesit-auto-recipe
       :lang 'go
       :ts-mode 'go-ts-mode
@@ -211,10 +231,41 @@ automatic installation (or prompting, based on the value of
       :remap '(poly-markdown-mode markdown-mode)
       :url "https://github.com/ikatyang/tree-sitter-markdown")
     ,(make-treesit-auto-recipe
+      :lang 'org
+      :ts-mode 'org-ts-mode
+      :remap 'org-mode
+      :url "https://github.com/milisims/tree-sitter-org")
+    ,(make-treesit-auto-recipe
+      :lang 'perl
+      :ts-mode 'perl-ts-mode
+      :remap 'perl-mode
+      :url "https://github.com/ganezdragon/tree-sitter-perl")
+    ,(make-treesit-auto-recipe
       :lang 'protobuf
       :ts-mode 'protobuf-ts-mode
       :remap 'protobuf-mode
       :url "https://github.com/mitchellh/tree-sitter-proto")
+    ,(make-treesit-auto-recipe
+      :lang 'surface
+      :ts-mode 'surface-ts-mode
+      :remap 'surface-mode
+      :url "https://github.com/connorlay/tree-sitter-surface")
+    ,(make-treesit-auto-recipe
+      :lang 'sql
+      :ts-mode 'sql-ts-mode
+      :remap 'sql-mode
+      :revision "gh-pages"
+      :url "https://github.com/DerekStride/tree-sitter-sql")
+    ,(make-treesit-auto-recipe
+      :lang 'vhdl
+      :ts-mode 'vhdl-ts-mode
+      :remap 'vhdl-mode
+      :url "https://github.com/alemuller/tree-sitter-vhdl")
+    ,(make-treesit-auto-recipe
+      :lang 'wgsl
+      :ts-mode 'wgsl-ts-mode
+      :remap 'wgsl-mode
+      :url "https://github.com/mehmetoguzderin/tree-sitter-wgsl")
     ,(make-treesit-auto-recipe
       :lang 'python
       :ts-mode 'python-ts-mode
@@ -247,6 +298,11 @@ automatic installation (or prompting, based on the value of
       :url "https://github.com/tree-sitter/tree-sitter-typescript"
       :revision "master"
       :source-dir "tsx/src")
+    ,(make-treesit-auto-recipe
+      :lang 'janet
+      :ts-mode 'janet-ts-mode
+      :remap 'janet-mode
+      :url "https://github.com/sogaiu/tree-sitter-janet-simple")
     ,(make-treesit-auto-recipe
       :lang 'typescript
       :ts-mode 'typescript-ts-mode
