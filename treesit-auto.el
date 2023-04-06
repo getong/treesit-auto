@@ -292,6 +292,11 @@ automatic installation (or prompting, based on the value of
       :remap '(conf-toml-mode toml-mode)
       :url "https://github.com/tree-sitter/tree-sitter-toml")
     ,(make-treesit-auto-recipe
+      :lang 'dart
+      :ts-mode 'dart-ts-mode
+      :remap 'dart-mode
+      :url "https://github.com/ast-grep/tree-sitter-dart")
+    ,(make-treesit-auto-recipe
       :lang 'tsx
       :ts-mode 'tsx-ts-mode
       :requires 'typescript
